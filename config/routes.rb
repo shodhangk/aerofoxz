@@ -4,6 +4,7 @@ Rails.application.routes.draw do
     get 'welcome/index'
   end
  
+  root 'flights#index'
 
   resources :flights
   resources :aeroplanes
