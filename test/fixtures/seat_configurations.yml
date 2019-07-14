@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  aeroplane_id: 1
+  seat_group_id: 1
+
+two:
+  aeroplane_id: 1
+  seat_group_id: 1
