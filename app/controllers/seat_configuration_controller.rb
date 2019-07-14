@@ -7,10 +7,9 @@ class SeatConfigurationController < ApplicationController
       render json: {message: 'Failed'}, status: 400
     end
   end
-
+  private
   def seat_configuration_params
     params.require(:category, :rows, :columns, :aero_plane_id, :base_price)
   end
 
-  def 
 end
