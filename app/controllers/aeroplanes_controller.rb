@@ -2,7 +2,7 @@ class AeroplanesController < ApplicationController
   before_action :fetch_aeroplane, only: [:show, :edit, :delete]
 
   def index
-    render json: {aeroplanes: aeroplane.all} status: 200
+    render json: {aeroplanes: aeroplane.all}, status: 200
   end
 
   def show 
@@ -36,7 +36,7 @@ class AeroplanesController < ApplicationController
   end
 
   def aeroplane_params
-    params.require(:name, :aeroplane_type, :seat_configurations: [:id, :name, :email])
+    params.require(:name, :aeroplane_type, seat_configurations: [:id, :name, :email])
   end
 
   def fetch_aeroplane
